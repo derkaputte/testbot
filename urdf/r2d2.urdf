@@ -32,7 +32,7 @@
       <geometry>
         <mesh filename="package://testbot/meshes/Rad_gelb.dae"/>
       </geometry>
-      <origin rpy="0 1.57075 0" xyz="0 0 0"/>
+      <origin rpy="0 0 1.57075" xyz="0 0 0.075"/>
     </visual>
   </link>
 
