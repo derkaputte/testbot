@@ -17,7 +17,7 @@
 <!-- BASE -->
   <link name="base_link">
     <visual>
-      <origin rpy="0.0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://testbot/meshes/Base.dae"/>
       </geometry>
