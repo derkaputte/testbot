@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<robot name="visual">
+
+<material name="blue">
+    <color rgba="0 0 0.8 1"/>
+  </material>
+  <material name="black">
+    <color rgba="0 0 0 1"/>
+  </material>
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/Base.dae"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  
+<!-- 
+  <link name="left_gripper">
+    <visual>
+      <origin rpy="0.0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/l_finger.dae"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="left_tip_joint" type="fixed">
+    <parent link="left_gripper"/>
+    <child link="left_tip"/>
+  </joint>
+  <link name="left_tip">
+    <visual>
+      <origin rpy="0.0 0 0" xyz="0.09137 0.00495 0"/>
+      <geometry>
+        <mesh filename="package://urdf_tutorial/meshes/l_finger_tip.dae"/>
+      </geometry>
+    </visual>
+  </link>
+  <joint name="right_gripper_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.2 -0.01 0"/>
+    <parent link="gripper_pole"/>
+    <child link="right_gripper"/>
+  </joint>
+-->
+</robot>
