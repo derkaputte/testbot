@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <robot name="visual">
 
+
+<!-- MATERIALS -->
 <material name="blue">
     <color rgba="0 0 0.8 1"/>
   </material>
@@ -11,16 +13,22 @@
     <color rgba="1 1 1 1"/>
   </material>
 
+
+<!-- BASE -->
   <link name="base_link">
     <visual>
+      <origin rpy="0.0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://urdf_tutorial/meshes/Base.dae"/>
+        <mesh filename="package://testbot/meshes/Base.dae"/>
       </geometry>
       <material name="blue"/>
     </visual>
   </link>
 
   
+
+
+
 <!-- 
   <link name="left_gripper">
     <visual>
