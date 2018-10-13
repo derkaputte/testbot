@@ -85,7 +85,7 @@
   <joint name="base_to_stuetz" type="fixed">
     <parent link="base_link"/>
     <child link="stuetz"/>
-    <origin xyz="-0.145 0 0.051"/>
+    <origin xyz="-0.145 0 0.049"/>
   </joint>
 
 
