@@ -73,7 +73,20 @@
     <origin xyz="-0.145 0 0.005"/>
   </joint>
 
+  <link name="stuetz">
+    <visual>
+      <geometry>
+        <mesh filename="package://testbot/meshes/Stuetzrad.dae"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </visual>
+  </link>
 
+  <joint name="base_to_stuetz" type="fixed">
+    <parent link="base_link"/>
+    <child link="stuetz"/>
+    <origin xyz="-0.145 0 0.046"/>
+  </joint>
 
 
 <!-- 
