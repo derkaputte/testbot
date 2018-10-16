@@ -23,6 +23,17 @@
       </geometry>
       <material name="blue"/>
     </visual>
+    <inertial>
+      <origin rpy="0 0 -1.57075" xyz="0 0 0"/>
+      <mass value="1.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="100.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 -1.57075" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://testbot/meshes/Base.dae"/>
+      </geometry>
+    </collision>
   </link>
 
 <!-- DOME -->
@@ -34,6 +45,17 @@
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="1.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="100.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://testbot/meshes/dome.dae"/>
+      </geometry>
+    </collision>
   </link>
 
   <joint name="base_to_dome" type="fixed">
@@ -51,6 +73,17 @@
       </geometry>
       <origin rpy="0 0 -1.57075" xyz="0 0 0"/>
     </visual>
+    <inertial>
+      <origin rpy="0 0 -1.57075" xyz="0 0 0"/>
+      <mass value="1.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="100.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 -1.57075" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://testbot/meshes/Kinect.dae"/>
+      </geometry>
+    </collision>
   </link>
 
   <joint name="dome_to_kinect" type="fixed">
@@ -68,6 +101,17 @@
       </geometry>
       <origin rpy="0 0 1.57075" xyz="0 0 0"/>
     </visual>
+    <inertial>
+      <origin rpy="0 0 1.57075" xyz="0 0 0"/>
+      <mass value="1.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="100.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 1.57075" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://testbot/meshes/Rad_gelb.dae"/>
+      </geometry>
+    </collision>
   </link>
 
   <joint name="base_to_wheel_r" type="fixed">
@@ -83,6 +127,17 @@
       </geometry>
       <origin rpy="0 0 1.57075" xyz="0 0 0"/>
     </visual>
+    <inertial>
+      <origin rpy="0 0 1.57075" xyz="0 0 0"/>
+      <mass value="1.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="100.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 1.57075" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://testbot/meshes/Rad_gelb.dae"/>
+      </geometry>
+    </collision>
   </link>
 
   <joint name="base_to_wheel_l" type="fixed">
@@ -99,6 +154,17 @@
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="1.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="100.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://testbot/meshes/Einhausung.dae"/>
+      </geometry>
+    </collision>
   </link>
 
   <joint name="base_to_einhausung" type="fixed">
@@ -114,6 +180,17 @@
       </geometry>
       <origin rpy="0 0 1.5707963268" xyz="0 0 0"/>
     </visual>
+    <inertial>
+      <origin rpy="0 0 1.5707963268" xyz="0 0 0"/>
+      <mass value="1.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="100.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <collision>
+      <origin rpy="0 0 1.5707963268" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://testbot/meshes/Stuetzrad.dae"/>
+      </geometry>
+    </collision>
   </link>
 
   <joint name="base_to_stuetz" type="fixed">
