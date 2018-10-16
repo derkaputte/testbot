@@ -110,7 +110,7 @@
   <link name="stuetz">
     <visual>
       <geometry>
-        <mesh filename="package://testbot/meshes/Stuetzrad.dae"/>
+        <mesh filename="package://testbot/meshes/lenkrolle.dae"/>
       </geometry>
       <origin rpy="0 0 1.5707963268" xyz="0 0 0"/>
     </visual>
