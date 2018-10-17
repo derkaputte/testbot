@@ -134,9 +134,9 @@
     <actuator name="wheel_r_motor">
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
-    <joint name="base_to_wheel_r">
-      <hardwareInterface>VelocityJointInterface</hardwareInterface>
-    </joint>
+	  <joint name="base_to_wheel_r">
+           <hardwareInterface>VelocityJointInterface</hardwareInterface>
+	  </joint>
   </transmission>
 
 
@@ -168,8 +168,25 @@
     <child link="wheel_l"/>
 		<axis xyz="0 1 0"/>
     <origin xyz="0 0.19 0.035"/>
-  </joint>
+  </joint>  
 
+    <gazebo reference="wheel_l">
+      <mu1 value="200.0"/>
+      <mu2 value="100.0"/>
+      <kp value="10000000.0" />
+      <kd value="1.0" />
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+  <transmission name="wheel_l_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="wheel_l_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+	  <joint name="base_to_wheel_r">
+           <hardwareInterface>VelocityJointInterface</hardwareInterface>
+	  </joint>
+  </transmission>
 
   <link name="einhausung">
     <visual>
