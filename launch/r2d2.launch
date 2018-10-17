@@ -15,7 +15,7 @@
 
   <rosparam command="load"
             file="$(find testbot)/config/diffdrive.yaml"
-	    ns="r2d2_diff_drive_controller" />
+      	    ns="r2d2_diff_drive_controller" />
 
 
   <node name="r2d2_controller_spawner" pkg="controller_manager" type="spawner"
@@ -23,7 +23,7 @@
           r2d2_diff_drive_controller
           --shutdown-timeout 3"/>
 
-  <node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering">
-<param name="default_topic" value="/r2d2_diff_drive_controller/cmd_vel"/>
+  <node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering" />
+  <param name="default_topic" value="/r2d2_diff_drive_controller/cmd_vel"/>
 
 </launch>
